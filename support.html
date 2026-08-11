@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zihinsel Güç — Destek / Support</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #0f0f0f;
+      color: #d4c9a8;
+      min-height: 100vh;
+      padding: 40px 20px 80px;
+    }
+    .container { max-width: 760px; margin: 0 auto; }
+    h1 {
+      font-size: 1.8rem;
+      color: #e9c400;
+      margin-bottom: 8px;
+      letter-spacing: 0.02em;
+    }
+    .subtitle { color: #888; font-size: 0.9rem; margin-bottom: 32px; }
+    .lang-bar {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      margin-bottom: 36px;
+    }
+    .lang-btn {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      color: #aaa;
+      padding: 6px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { border-color: #e9c400; color: #e9c400; }
+    .lang-btn.active { background: #e9c400; color: #0f0f0f; border-color: #e9c400; font-weight: bold; }
+    .section { display: none; }
+    .section.active { display: block; }
+    h2 {
+      font-size: 1.1rem;
+      color: #e9c400;
+      margin: 28px 0 10px;
+      border-bottom: 1px solid #2a2a2a;
+      padding-bottom: 6px;
+    }
+    p { line-height: 1.75; margin-bottom: 12px; color: #c8bfa0; font-size: 0.97rem; }
+    a { color: #e9c400; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .updated { font-size: 0.82rem; color: #666; margin-bottom: 24px; }
+    .mail-box {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin: 10px 0 24px;
+    }
+    .mail-box a { font-size: 1.05rem; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Zihinsel Güç</h1>
+  <p class="subtitle">Destek / Support</p>
+
+  <div class="lang-bar">
+    <button class="lang-btn active" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button>
+    <button class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button class="lang-btn" onclick="setLang('de')">🇩🇪 Deutsch</button>
+    <button class="lang-btn" onclick="setLang('ar')">🇸🇦 العربية</button>
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div class="section active" id="lang-tr">
+    <p>Zihinsel Güç ile ilgili bir sorunuz, sorununuz veya öneriniz mi var? Aşağıdan bize ulaşabilir ya da sık sorulan soruların cevaplarına bakabilirsiniz.</p>
+
+    <h2>İletişim</h2>
+    <div class="mail-box"><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></div>
+
+    <h2>Aboneliğimi nasıl iptal ederim?</h2>
+    <p>Abonelikler Apple tarafından yönetilir, uygulama içinden iptal edilemez. Cihazınızda: <strong>Ayarlar → [Adınız] → Abonelikler → Zihinsel Güç → İptal Et</strong>.</p>
+
+    <h2>Satın alımlarımı nasıl geri yüklerim?</h2>
+    <p>Uygulama içinde <strong>Ayarlar → Satın almayı geri yükle</strong> seçeneğini kullanın. Aynı Apple ID ile giriş yapmış olmanız yeterli.</p>
+
+    <h2>Hesabımı ve verilerimi nasıl silerim?</h2>
+    <p>Uygulama içinde <strong>Ayarlar → Hesabı Sil</strong> ile tüm verileriniz kalıcı olarak silinir. Bu işlem geri alınamaz. Sorun yaşarsanız yukarıdaki e-postadan da talep edebilirsiniz.</p>
+
+    <h2>Bildirimler gelmiyor</h2>
+    <p>Cihazınızın <strong>Ayarlar → Bildirimler → Zihinsel Güç</strong> bölümünden izin verildiğinden emin olun, ardından uygulama içindeki bildirim saatlerini kontrol edin.</p>
+
+    <h2>Hata bildirimi ve öneriler</h2>
+    <p>Karşılaştığınız bir hatayı veya bir özellik önerinizi yukarıdaki e-posta adresine yazabilirsiniz, mümkün olan en kısa sürede döneriz.</p>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="section" id="lang-en">
+    <p>Have a question, an issue, or a suggestion about Zihinsel Güç? Reach out below, or check the answers to common questions.</p>
+
+    <h2>Contact</h2>
+    <div class="mail-box"><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></div>
+
+    <h2>How do I cancel my subscription?</h2>
+    <p>Subscriptions are managed by Apple and can't be cancelled from within the app. On your device: <strong>Settings → [Your Name] → Subscriptions → Zihinsel Güç → Cancel Subscription</strong>.</p>
+
+    <h2>How do I restore my purchases?</h2>
+    <p>In the app, use <strong>Settings → Restore Purchase</strong>. Make sure you're signed in with the same Apple ID used for the original purchase.</p>
+
+    <h2>How do I delete my account and data?</h2>
+    <p>In the app, use <strong>Settings → Delete Account</strong> to permanently delete all your data. This action cannot be undone. You can also request deletion by emailing the address above.</p>
+
+    <h2>I'm not receiving notifications</h2>
+    <p>Check that notifications are allowed under your device's <strong>Settings → Notifications → Zihinsel Güç</strong>, then verify the notification times set inside the app.</p>
+
+    <h2>Bug reports & feature requests</h2>
+    <p>Send any bug you've run into or a feature idea to the email address above — we read every message.</p>
+  </div>
+
+  <!-- ESPAÑOL -->
+  <div class="section" id="lang-es">
+    <p>¿Tiene alguna pregunta, problema o sugerencia sobre Zihinsel Güç? Contáctenos a continuación o consulte las respuestas a las preguntas más frecuentes.</p>
+
+    <h2>Contacto</h2>
+    <div class="mail-box"><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></div>
+
+    <h2>¿Cómo cancelo mi suscripción?</h2>
+    <p>Las suscripciones las gestiona Apple y no se pueden cancelar desde la aplicación. En su dispositivo: <strong>Ajustes → [Su nombre] → Suscripciones → Zihinsel Güç → Cancelar suscripción</strong>.</p>
+
+    <h2>¿Cómo restauro mis compras?</h2>
+    <p>En la aplicación, use <strong>Ajustes → Restaurar compra</strong>. Asegúrese de haber iniciado sesión con el mismo ID de Apple utilizado en la compra original.</p>
+
+    <h2>¿Cómo elimino mi cuenta y mis datos?</h2>
+    <p>En la aplicación, use <strong>Ajustes → Eliminar cuenta</strong> para borrar permanentemente todos sus datos. Esta acción no se puede deshacer. También puede solicitar la eliminación escribiendo al correo indicado arriba.</p>
+
+    <h2>No recibo notificaciones</h2>
+    <p>Compruebe que las notificaciones estén permitidas en <strong>Ajustes → Notificaciones → Zihinsel Güç</strong> de su dispositivo, y luego revise los horarios configurados dentro de la aplicación.</p>
+
+    <h2>Informar errores y sugerencias</h2>
+    <p>Envíe cualquier error que haya encontrado o una idea de función al correo indicado arriba — leemos todos los mensajes.</p>
+  </div>
+
+  <!-- FRANÇAIS -->
+  <div class="section" id="lang-fr">
+    <p>Une question, un problème ou une suggestion à propos de Zihinsel Güç ? Contactez-nous ci-dessous ou consultez les réponses aux questions fréquentes.</p>
+
+    <h2>Contact</h2>
+    <div class="mail-box"><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></div>
+
+    <h2>Comment annuler mon abonnement ?</h2>
+    <p>Les abonnements sont gérés par Apple et ne peuvent pas être annulés depuis l'application. Sur votre appareil : <strong>Réglages → [Votre nom] → Abonnements → Zihinsel Güç → Résilier l'abonnement</strong>.</p>
+
+    <h2>Comment restaurer mes achats ?</h2>
+    <p>Dans l'application, utilisez <strong>Réglages → Restaurer les achats</strong>. Assurez-vous d'être connecté avec le même identifiant Apple que celui utilisé lors de l'achat initial.</p>
+
+    <h2>Comment supprimer mon compte et mes données ?</h2>
+    <p>Dans l'application, utilisez <strong>Réglages → Supprimer le compte</strong> pour effacer définitivement toutes vos données. Cette action est irréversible. Vous pouvez aussi demander la suppression par e-mail à l'adresse ci-dessus.</p>
+
+    <h2>Je ne reçois pas de notifications</h2>
+    <p>Vérifiez que les notifications sont autorisées dans <strong>Réglages → Notifications → Zihinsel Güç</strong> de votre appareil, puis vérifiez les horaires configurés dans l'application.</p>
+
+    <h2>Signaler un bug ou une suggestion</h2>
+    <p>Envoyez tout bug rencontré ou toute idée de fonctionnalité à l'adresse e-mail ci-dessus — nous lisons chaque message.</p>
+  </div>
+
+  <!-- DEUTSCH -->
+  <div class="section" id="lang-de">
+    <p>Haben Sie eine Frage, ein Problem oder einen Vorschlag zu Zihinsel Güç? Kontaktieren Sie uns unten oder lesen Sie die Antworten auf häufig gestellte Fragen.</p>
+
+    <h2>Kontakt</h2>
+    <div class="mail-box"><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></div>
+
+    <h2>Wie kündige ich mein Abonnement?</h2>
+    <p>Abonnements werden von Apple verwaltet und können nicht in der App gekündigt werden. Auf Ihrem Gerät: <strong>Einstellungen → [Ihr Name] → Abonnements → Zihinsel Güç → Abonnement kündigen</strong>.</p>
+
+    <h2>Wie stelle ich meine Käufe wieder her?</h2>
+    <p>Verwenden Sie in der App <strong>Einstellungen → Kauf wiederherstellen</strong>. Stellen Sie sicher, dass Sie mit derselben Apple-ID angemeldet sind, die beim ursprünglichen Kauf verwendet wurde.</p>
+
+    <h2>Wie lösche ich mein Konto und meine Daten?</h2>
+    <p>Verwenden Sie in der App <strong>Einstellungen → Konto löschen</strong>, um alle Ihre Daten dauerhaft zu löschen. Dieser Vorgang kann nicht rückgängig gemacht werden. Sie können die Löschung auch per E-Mail an die obige Adresse beantragen.</p>
+
+    <h2>Ich erhalte keine Benachrichtigungen</h2>
+    <p>Prüfen Sie, ob Benachrichtigungen unter <strong>Einstellungen → Mitteilungen → Zihinsel Güç</strong> auf Ihrem Gerät erlaubt sind, und kontrollieren Sie anschließend die in der App eingestellten Uhrzeiten.</p>
+
+    <h2>Fehler melden & Vorschläge</h2>
+    <p>Senden Sie jeden gefundenen Fehler oder eine Funktionsidee an die obige E-Mail-Adresse — wir lesen jede Nachricht.</p>
+  </div>
+
+  <!-- ARABIC -->
+  <div class="section" id="lang-ar" dir="rtl" style="text-align:right;">
+    <p>هل لديك سؤال أو مشكلة أو اقتراح بخصوص تطبيق Zihinsel Güç؟ تواصل معنا أدناه أو اطّلع على إجابات الأسئلة الشائعة.</p>
+
+    <h2>التواصل</h2>
+    <div class="mail-box"><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></div>
+
+    <h2>كيف ألغي اشتراكي؟</h2>
+    <p>تُدار الاشتراكات من قِبل Apple ولا يمكن إلغاؤها من داخل التطبيق. على جهازك: <strong>الإعدادات ← [اسمك] ← الاشتراكات ← Zihinsel Güç ← إلغاء الاشتراك</strong>.</p>
+
+    <h2>كيف أستعيد مشترياتي؟</h2>
+    <p>داخل التطبيق، استخدم <strong>الإعدادات ← استعادة الشراء</strong>. تأكد من تسجيل الدخول بنفس معرّف Apple المستخدم في عملية الشراء الأصلية.</p>
+
+    <h2>كيف أحذف حسابي وبياناتي؟</h2>
+    <p>داخل التطبيق، استخدم <strong>الإعدادات ← حذف الحساب</strong> لحذف جميع بياناتك نهائيًا. لا يمكن التراجع عن هذا الإجراء. يمكنك أيضًا طلب الحذف عبر البريد الإلكتروني أعلاه.</p>
+
+    <h2>لا تصلني إشعارات</h2>
+    <p>تأكد من السماح بالإشعارات ضمن <strong>الإعدادات ← الإشعارات ← Zihinsel Güç</strong> في جهازك، ثم تحقق من أوقات الإشعارات المحددة داخل التطبيق.</p>
+
+    <h2>الإبلاغ عن الأخطاء والاقتراحات</h2>
+    <p>أرسل أي خطأ واجهته أو فكرة ميزة إلى البريد الإلكتروني أعلاه — نقرأ كل رسالة.</p>
+  </div>
+
+</div>
+
+<script>
+  function setLang(code) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('lang-' + code).classList.add('active');
+    event.target.classList.add('active');
+    document.documentElement.lang = code;
+  }
+</script>
+</body>
+</html>
