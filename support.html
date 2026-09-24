@@ -66,12 +66,13 @@
   <p class="subtitle">Destek / Support</p>
 
   <div class="lang-bar">
-    <button class="lang-btn active" onclick="setLang('tr')">🇹🇷 Türkçe</button>
-    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
-    <button class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button>
-    <button class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="lang-btn" onclick="setLang('de')">🇩🇪 Deutsch</button>
-    <button class="lang-btn" onclick="setLang('ar')">🇸🇦 العربية</button>
+    <button class="lang-btn active" data-lang="tr" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" data-lang="es" onclick="setLang('es')">🇪🇸 Español</button>
+    <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button class="lang-btn" data-lang="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
+    <button class="lang-btn" data-lang="pt" onclick="setLang('pt')">🇧🇷 Português</button>
+    <button class="lang-btn" data-lang="ar" onclick="setLang('ar')">🇸🇦 العربية</button>
   </div>
 
   <!-- TÜRKÇE -->
@@ -94,7 +95,7 @@
     <p>Cihazınızın <strong>Ayarlar → Bildirimler → Zihinsel Güç</strong> bölümünden izin verildiğinden emin olun, ardından uygulama içindeki bildirim saatlerini kontrol edin.</p>
 
     <h2>Hata bildirimi ve öneriler</h2>
-    <p>Karşılaştığınız bir hatayı veya bir özellik önerinizi yukarıdaki e-posta adresine yazabilirsiniz, mümkün olan en kısa sürede döneriz.</p>
+    <p>Karşılaştığınız bir hatayı veya bir özellik önerinizi yukarıdaki e-posta adresine yazabilirsiniz, mümkün olan en kısa sürede döneriz. Uygulama içinden de yazabilirsiniz: <strong>Ayarlar → Geri bildirim gönder</strong>.</p>
   </div>
 
   <!-- ENGLISH -->
@@ -117,7 +118,7 @@
     <p>Check that notifications are allowed under your device's <strong>Settings → Notifications → Zihinsel Güç</strong>, then verify the notification times set inside the app.</p>
 
     <h2>Bug reports & feature requests</h2>
-    <p>Send any bug you've run into or a feature idea to the email address above — we read every message.</p>
+    <p>Send any bug you've run into or a feature idea to the email address above — we read every message. You can also write from inside the app: <strong>Settings → Send feedback</strong>.</p>
   </div>
 
   <!-- ESPAÑOL -->
@@ -140,7 +141,7 @@
     <p>Compruebe que las notificaciones estén permitidas en <strong>Ajustes → Notificaciones → Zihinsel Güç</strong> de su dispositivo, y luego revise los horarios configurados dentro de la aplicación.</p>
 
     <h2>Informar errores y sugerencias</h2>
-    <p>Envíe cualquier error que haya encontrado o una idea de función al correo indicado arriba — leemos todos los mensajes.</p>
+    <p>Envíe cualquier error que haya encontrado o una idea de función al correo indicado arriba — leemos todos los mensajes. También puedes escribirnos desde la app: <strong>Ajustes → Enviar comentarios</strong>.</p>
   </div>
 
   <!-- FRANÇAIS -->
@@ -163,7 +164,7 @@
     <p>Vérifiez que les notifications sont autorisées dans <strong>Réglages → Notifications → Zihinsel Güç</strong> de votre appareil, puis vérifiez les horaires configurés dans l'application.</p>
 
     <h2>Signaler un bug ou une suggestion</h2>
-    <p>Envoyez tout bug rencontré ou toute idée de fonctionnalité à l'adresse e-mail ci-dessus — nous lisons chaque message.</p>
+    <p>Envoyez tout bug rencontré ou toute idée de fonctionnalité à l'adresse e-mail ci-dessus — nous lisons chaque message. Vous pouvez aussi nous écrire depuis l’app : <strong>Réglages → Envoyer un avis</strong>.</p>
   </div>
 
   <!-- DEUTSCH -->
@@ -186,7 +187,30 @@
     <p>Prüfen Sie, ob Benachrichtigungen unter <strong>Einstellungen → Mitteilungen → Zihinsel Güç</strong> auf Ihrem Gerät erlaubt sind, und kontrollieren Sie anschließend die in der App eingestellten Uhrzeiten.</p>
 
     <h2>Fehler melden & Vorschläge</h2>
-    <p>Senden Sie jeden gefundenen Fehler oder eine Funktionsidee an die obige E-Mail-Adresse — wir lesen jede Nachricht.</p>
+    <p>Senden Sie jeden gefundenen Fehler oder eine Funktionsidee an die obige E-Mail-Adresse — wir lesen jede Nachricht. Sie können uns auch direkt aus der App schreiben: <strong>Einstellungen → Feedback senden</strong>.</p>
+  </div>
+
+  <!-- PORTUGUÊS -->
+  <div class="section" id="lang-pt">
+    <p>Tem uma dúvida, um problema ou uma sugestão sobre o Zihinsel Güç? Fale com a gente abaixo ou veja as respostas às perguntas mais comuns.</p>
+
+    <h2>Contato</h2>
+    <div class="mail-box"><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></div>
+
+    <h2>Como cancelo minha assinatura?</h2>
+    <p>As assinaturas são gerenciadas pela Apple e não podem ser canceladas dentro do app. No seu dispositivo: <strong>Ajustes → [Seu nome] → Assinaturas → Zihinsel Güç → Cancelar assinatura</strong>.</p>
+
+    <h2>Como restauro minhas compras?</h2>
+    <p>No app, use <strong>Ajustes → Restaurar compras</strong>. Basta estar conectado com o mesmo Apple ID da compra original.</p>
+
+    <h2>Como excluo minha conta e meus dados?</h2>
+    <p>No app, use <strong>Ajustes → Excluir conta</strong> para apagar todos os seus dados de forma permanente. Essa ação não pode ser desfeita. Você também pode pedir a exclusão pelo e-mail acima.</p>
+
+    <h2>Não estou recebendo notificações</h2>
+    <p>Confira se as notificações estão permitidas em <strong>Ajustes → Notificações → Zihinsel Güç</strong> no seu dispositivo e depois verifique os horários definidos no app.</p>
+
+    <h2>Relatar erros e sugestões</h2>
+    <p>Envie qualquer erro que encontrar ou ideia de recurso para o e-mail acima — lemos todas as mensagens. Você também pode escrever pelo app: <strong>Ajustes → Enviar feedback</strong>.</p>
   </div>
 
   <!-- ARABIC -->
@@ -209,19 +233,24 @@
     <p>تأكد من السماح بالإشعارات ضمن <strong>الإعدادات ← الإشعارات ← Zihinsel Güç</strong> في جهازك، ثم تحقق من أوقات الإشعارات المحددة داخل التطبيق.</p>
 
     <h2>الإبلاغ عن الأخطاء والاقتراحات</h2>
-    <p>أرسل أي خطأ واجهته أو فكرة ميزة إلى البريد الإلكتروني أعلاه — نقرأ كل رسالة.</p>
+    <p>أرسل أي خطأ واجهته أو فكرة ميزة إلى البريد الإلكتروني أعلاه — نقرأ كل رسالة. يمكنك أيضًا مراسلتنا من داخل التطبيق: <strong>الإعدادات ← أرسل ملاحظاتك</strong>.</p>
   </div>
 
 </div>
 
 <script>
-  function setLang(code) {
+  function setLang(code, btn) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === code));
     document.getElementById('lang-' + code).classList.add('active');
-    event.target.classList.add('active');
     document.documentElement.lang = code;
   }
+  // Açılışta tarayıcı dilini seç (uygulamanın dili genelde cihaz dilidir); desteklenmiyorsa İngilizce.
+  (function () {
+    var supported = ["tr", "en", "es", "fr", "de", "pt", "ar"];
+    var want = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    setLang(supported.indexOf(want) >= 0 ? want : 'en');
+  })();
 </script>
 </body>
 </html>

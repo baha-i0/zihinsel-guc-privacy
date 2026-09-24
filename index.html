@@ -61,231 +61,322 @@
   <p class="subtitle">Gizlilik Politikası / Privacy Policy</p>
 
   <div class="lang-bar">
-    <button class="lang-btn active" onclick="setLang('tr')">🇹🇷 Türkçe</button>
-    <button class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
-    <button class="lang-btn" onclick="setLang('es')">🇪🇸 Español</button>
-    <button class="lang-btn" onclick="setLang('fr')">🇫🇷 Français</button>
-    <button class="lang-btn" onclick="setLang('de')">🇩🇪 Deutsch</button>
-    <button class="lang-btn" onclick="setLang('ar')">🇸🇦 العربية</button>
+    <button class="lang-btn active" data-lang="tr" onclick="setLang('tr')">🇹🇷 Türkçe</button>
+    <button class="lang-btn" data-lang="en" onclick="setLang('en')">🇬🇧 English</button>
+    <button class="lang-btn" data-lang="es" onclick="setLang('es')">🇪🇸 Español</button>
+    <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">🇫🇷 Français</button>
+    <button class="lang-btn" data-lang="de" onclick="setLang('de')">🇩🇪 Deutsch</button>
+    <button class="lang-btn" data-lang="pt" onclick="setLang('pt')">🇧🇷 Português</button>
+    <button class="lang-btn" data-lang="ar" onclick="setLang('ar')">🇸🇦 العربية</button>
   </div>
 
-  <!-- TÜRKÇE -->
   <div class="section active" id="lang-tr">
-    <p class="updated">Son güncelleme: 28 Temmuz 2026</p>
-    <p>Bu gizlilik politikası, Zihinsel Güç uygulamasını kullanan kişilerin kişisel verilerinin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar.</p>
+    <p class="updated">Son güncelleme: 24 Eylül 2026</p>
+    <p>Bu gizlilik politikası, Zihinsel Güç uygulamasını kullanan kişilerin kişisel verilerinin nasıl toplandığını, kullanıldığını ve korunduğunu açıklar. Kısaca: reklam yok, takip yok, verilerinizi satmıyoruz.</p>
 
     <h2>1. Veri Sorumlusu</h2>
     <p>Baha İncesu — <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>2. Toplanan Veriler</h2>
-    <p><strong>Hesap:</strong> Uygulamayı hesap açmadan kullanabilirsiniz. Dilerseniz e-posta adresiniz ve bir şifre ile hesap oluşturabilir, ya da Apple ile Giriş veya Google ile Giriş seçeneklerini kullanabilirsiniz. Hesap oluşturduğunuzda e-posta adresiniz ve bir kullanıcı kimliği (UUID) Supabase altyapısında saklanır; şifreniz Supabase tarafından şifrelenmiş biçimde tutulur ve tarafımızca görülemez. Bu bilgiler yalnızca hesabınızı tanımlamak ve favorileriniz ile ilerlemenizi cihazlarınız arasında eşitlemek için kullanılır.</p>
-    <p><strong>Kullanım:</strong> Favori sözler, Felsefe Ağacı ilerleme durumu ve ayarlar cihazda ve Supabase sunucusunda saklanır. Bu veriler yalnızca uygulama işlevselliği için kullanılır.</p>
-    <p><strong>Reklam:</strong> Uygulamanın bu sürümünde hiçbir reklam gösterilmemektedir ve reklam kimliğiniz (IDFA) okunmamaktadır. İleride reklam eklenmesi durumunda bu gizlilik politikası güncellenecek ve gerekli izinler ayrıca istenecektir.</p>
-    <p><strong>Abonelik:</strong> Ödeme işlemleri RevenueCat ve Apple App Store altyapısıyla gerçekleştirilir. Kredi kartı bilgileri uygulama tarafından toplanmaz veya saklanmaz.</p>
-    <p><strong>Bildirimler:</strong> İzin verirseniz yalnızca günlük motivasyon bildirimleri gönderilir.</p>
+    <p><strong>Hesap:</strong> Uygulamayı hesap açmadan kullanabilirsiniz. Dilerseniz e-posta ve şifreyle, Apple ile Giriş ya da Google ile Giriş ile hesap oluşturabilirsiniz. Bu durumda e-posta adresiniz ve bir kullanıcı kimliği (UUID) Supabase’de saklanır; şifreniz Supabase tarafından şifrelenmiş (hash) olarak tutulur ve tarafımızca görülemez. Bu bilgiler yalnızca hesabınızı tanımak ve verilerinizi cihazlarınız arasında eşitlemek için kullanılır.</p>
+    <p><strong>Uygulama verileri:</strong> Favori sözleriniz, Felsefe Ağacı ve Mücadele ilerlemeniz ile ayarlarınız cihazınızda saklanır; hesabınız varsa Supabase’e de eşitlenir. Görülen sözler, bildirim planı ve widget içeriği yalnızca cihazınızda tutulur.</p>
+    <p><strong>Dert Dökme:</strong> Dert Dökme ekranına yazdığınız metin hiçbir yere kaydedilmez ve hiçbir sunucuya gönderilmez; cevap cihazınızda seçilir ve metin ekrandan silinir.</p>
+    <p><strong>Abonelik:</strong> Ödemeler Apple App Store üzerinden yapılır, abonelik durumu RevenueCat ile yönetilir. Kart veya ödeme bilgileriniz uygulama tarafından toplanmaz. RevenueCat’e rastgele bir kimlik, giriş yaptıysanız hesabınızın kullanıcı kimliği (UUID) iletilir; bu, aboneliğinizin yeni bir cihazda ya da yeniden kurulumda geri gelmesi içindir.</p>
+    <p><strong>Ürün etkileşimi:</strong> Abonelik ekranı açıldığında, uygulamanın hangi bölümünden açıldığı (ör. “Ayarlar” ya da “günlük limit”) RevenueCat’e kaydedilir ve abonelik kimliğinizle ilişkilidir. Yalnızca uygulamayı geliştirmek için kullanılır; reklam veya takip amacıyla kullanılmaz, başka şirketlerle paylaşılmaz.</p>
+    <p><strong>Geri bildirim:</strong> Uygulamadaki “Geri bildirim gönder” ekranı, mesajınızı kendi e-posta uygulamanızda hazırlar; gönderip göndermemek size kalmıştır. Gönderirseniz e-posta adresinizi, mesajınızı ve mesaja eklenen teknik bilgileri (uygulama sürümü, iOS sürümü, uygulama dili) alırız. Bunları yalnızca size cevap vermek ve uygulamayı geliştirmek için kullanırız.</p>
+    <p><strong>Bildirimler:</strong> İzin verirseniz günlük bildirimler cihazınızda planlanır; bunun için hiçbir veri üçüncü taraflarla paylaşılmaz.</p>
+    <p><strong>Reklam ve takip:</strong> Uygulamada reklam yoktur ve reklam altyapısı (SDK) içermez. Reklam kimliğiniz (IDFA) okunmaz, sizi başka şirketlerin uygulama veya sitelerinde takip etmeyiz, verilerinizi satmayız.</p>
 
     <h2>3. Üçüncü Taraf Hizmetler</h2>
     <table>
       <tr><th>Hizmet</th><th>Amaç</th><th>Politika</th></tr>
-      <tr><td>Supabase</td><td>Veri saklama</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
-      <tr><td>RevenueCat</td><td>Abonelik yönetimi</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
-      <tr><td>Apple App Store</td><td>Ödeme altyapısı</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Supabase</td><td>Hesap ve veri eşitleme</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Abonelik yönetimi, abonelik ekranı gösterimleri</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Apple</td><td>App Store ödemeleri, Apple ile Giriş</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Google</td><td>Google ile Giriş; geri bildirim e-postalarının alındığı posta kutusu (Gmail)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
     </table>
 
-    <h2>4. Kullanıcı Hakları (KVKK)</h2>
-    <p>6698 sayılı Kanun kapsamında verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Bu haklar için <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a> adresine e-posta gönderebilirsiniz.</p>
+    <h2>4. Haklarınız (KVKK / GDPR)</h2>
+    <p>6698 sayılı KVKK ve GDPR kapsamında verilerinize erişme, düzeltilmesini veya silinmesini isteme, işlemeyi kısıtlama ve itiraz etme haklarına sahipsiniz. Hesabınızı ve Supabase’deki tüm verilerinizi uygulamada <strong>Ayarlar → Hesabı Sil</strong> ile kendiniz silebilirsiniz. Diğer talepler için: <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>5. Çocukların Gizliliği</h2>
-    <p>Uygulama 13 yaş altındaki çocuklara yönelik değildir ve bu yaş grubuna ait kişisel veri bilinçli olarak toplanmaz.</p>
+    <p>Uygulama 13 yaş altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplanmaz.</p>
 
-    <h2>6. Veri Saklama ve Güvenlik</h2>
-    <p>Veriler Supabase'in güvenli sunucularında saklanır. Hesap silindiğinde tüm kullanıcı verileri kalıcı olarak silinir.</p>
+    <h2>6. Saklama Süresi ve Güvenlik</h2>
+    <p>Veriler Supabase’in güvenli sunucularında saklanır. Hesap silindiğinde Supabase’deki tüm verileriniz kalıcı olarak silinir. Geri bildirim e-postaları, konu çözülene kadar saklanır ve talep etmeniz hâlinde silinir. Satın alma kayıtları Apple ve RevenueCat tarafından yasal yükümlülükler gereği tutulur.</p>
 
-    <h2>7. İletişim</h2>
+    <h2>7. Politikadaki Değişiklikler</h2>
+    <p>Bu politika güncellenebilir. Güncel sürüm her zaman bu sayfadadır; değişiklik yapıldığında yukarıdaki tarih güncellenir.</p>
+
+    <h2>8. İletişim</h2>
     <p><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
   </div>
 
-  <!-- ENGLISH -->
   <div class="section" id="lang-en">
-    <p class="updated">Last updated: July 28, 2026</p>
-    <p>This privacy policy explains how personal data is collected, used, and protected when you use the Zihinsel Güç (Mental Strength) app.</p>
+    <p class="updated">Last updated: September 24, 2026</p>
+    <p>This privacy policy explains how personal data is collected, used and protected when you use the Zihinsel Güç (Mental Strength) app. In short: no ads, no tracking, and we never sell your data.</p>
 
     <h2>1. Data Controller</h2>
     <p>Baha İncesu — <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>2. Data We Collect</h2>
-    <p><strong>Account:</strong> You can use the app without an account. If you choose to create one, you may sign up with an email address and a password, or use Sign in with Apple or Sign in with Google. When you create an account, your email address and a user ID (UUID) are stored on Supabase; your password is stored by Supabase in hashed form and is not visible to us. This information is used only to identify your account and to sync your favorites and progress across your devices.</p>
-    <p><strong>Usage:</strong> Favorite quotes, Philosophy Tree progress, and settings are stored locally and on Supabase servers solely to provide app functionality.</p>
-    <p><strong>Advertising:</strong> This version of the app displays no advertising and does not read your advertising identifier (IDFA). If advertising is introduced in a future version, this privacy policy will be updated and any required permissions will be requested separately.</p>
-    <p><strong>Subscriptions:</strong> Payments are processed through RevenueCat and the Apple App Store. No payment or card details are collected or stored by the app.</p>
-    <p><strong>Notifications:</strong> If you grant permission, only daily motivational notifications are sent. No data is shared with third parties for this purpose.</p>
+    <p><strong>Account:</strong> You can use the app without an account. If you choose to create one, you can sign up with an email and password, Sign in with Apple or Sign in with Google. Your email address and a user ID (UUID) are then stored on Supabase; your password is stored by Supabase in hashed form and is never visible to us. This information is used only to identify your account and sync your data across your devices.</p>
+    <p><strong>App data:</strong> Your favorite quotes, Philosophy Tree and Challenge progress, and settings are stored on your device and, if you have an account, synced to Supabase. Seen quotes, the notification schedule and widget content stay on your device only.</p>
+    <p><strong>Vent (“Dert Dökme”):</strong> Text you write on the Vent screen is never saved and never sent to any server; the reply is chosen on your device and the text is cleared from the screen.</p>
+    <p><strong>Subscriptions:</strong> Payments are made through the Apple App Store and subscription status is managed by RevenueCat. The app never collects card or payment details. RevenueCat receives a random identifier, or your account’s user ID (UUID) if you are signed in, so that your subscription comes back on a new device or after reinstalling.</p>
+    <p><strong>Product interaction:</strong> When the subscription screen opens, the part of the app it was opened from (e.g. “Settings” or “daily limit”) is recorded in RevenueCat, linked to your subscription identifier. It is used only to improve the app — never for advertising or tracking, and never shared with other companies.</p>
+    <p><strong>Feedback:</strong> The in-app “Send feedback” screen prepares a message in your own email app; whether to send it is up to you. If you send it, we receive your email address, your message and the technical details added to it (app version, iOS version, app language). We use these only to reply to you and to improve the app.</p>
+    <p><strong>Notifications:</strong> If you grant permission, daily notifications are scheduled on your device; no data is shared with third parties for this.</p>
+    <p><strong>Advertising & tracking:</strong> The app shows no ads and contains no advertising SDK. Your advertising identifier (IDFA) is never read, we do not track you across other companies’ apps or websites, and we never sell your data.</p>
 
     <h2>3. Third-Party Services</h2>
     <table>
       <tr><th>Service</th><th>Purpose</th><th>Policy</th></tr>
-      <tr><td>Supabase</td><td>Data storage</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
-      <tr><td>RevenueCat</td><td>Subscription management</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
-      <tr><td>Apple App Store</td><td>Payment infrastructure</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Supabase</td><td>Account and data sync</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Subscription management, subscription screen views</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Apple</td><td>App Store payments, Sign in with Apple</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Google</td><td>Sign in with Google; the mailbox that receives feedback emails (Gmail)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
     </table>
 
-    <h2>4. Your Rights (GDPR)</h2>
-    <p>Under applicable data protection law (including GDPR), you have the right to access, correct, delete, or restrict the processing of your personal data, and to object to processing. To exercise these rights, contact <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a>.</p>
+    <h2>4. Your Rights (GDPR / KVKK)</h2>
+    <p>Under the GDPR and Turkish data protection law (KVKK), you have the right to access your data, have it corrected or deleted, restrict its processing and object to it. You can delete your account and all your data on Supabase yourself in the app under <strong>Settings → Delete Account</strong>. For any other request: <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>The app is not intended for children under 13. We do not knowingly collect personal data from children under 13.</p>
+    <h2>5. Children’s Privacy</h2>
+    <p>The app is not directed at children under 13, and we do not knowingly collect personal data from them.</p>
 
-    <h2>6. Data Retention & Security</h2>
-    <p>Data is stored on Supabase's secure servers. All user data is permanently deleted upon account deletion.</p>
+    <h2>6. Retention & Security</h2>
+    <p>Data is stored on Supabase’s secure servers. When you delete your account, all your data on Supabase is permanently deleted. Feedback emails are kept until the matter is resolved and deleted on request. Purchase records are kept by Apple and RevenueCat as required by law.</p>
 
     <h2>7. Changes to This Policy</h2>
-    <p>This policy may be updated periodically. Significant changes will be announced via in-app notification. The current version is always available on this page.</p>
+    <p>This policy may be updated. The current version is always on this page; the date above changes whenever it is updated.</p>
 
     <h2>8. Contact</h2>
     <p><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
   </div>
 
-  <!-- ESPAÑOL -->
   <div class="section" id="lang-es">
-    <p class="updated">Última actualización: 28 de julio de 2026</p>
-    <p>Esta política de privacidad explica cómo se recopilan, usan y protegen los datos personales de los usuarios de la aplicación Zihinsel Güç (Fuerza Mental).</p>
+    <p class="updated">Última actualización: 24 de septiembre de 2026</p>
+    <p>Esta política de privacidad explica cómo se recopilan, usan y protegen los datos personales al usar la aplicación Zihinsel Güç (Fuerza Mental). En resumen: sin anuncios, sin seguimiento y nunca vendemos tus datos.</p>
 
     <h2>1. Responsable del tratamiento</h2>
     <p>Baha İncesu — <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>2. Datos que recopilamos</h2>
-    <p><strong>Cuenta:</strong> Puede usar la aplicación sin una cuenta. Si decide crear una, puede registrarse con una dirección de correo electrónico y una contraseña, o utilizar «Iniciar sesión con Apple» o «Iniciar sesión con Google». Al crear una cuenta, su dirección de correo electrónico y un ID de usuario (UUID) se almacenan en Supabase; su contraseña se almacena cifrada por Supabase y no es visible para nosotros. Esta información se utiliza únicamente para identificar su cuenta y sincronizar sus favoritos y su progreso entre sus dispositivos.</p>
-    <p><strong>Uso:</strong> Las citas favoritas, el progreso en el Árbol de Filosofía y las configuraciones se almacenan localmente y en los servidores de Supabase únicamente para proporcionar la funcionalidad de la aplicación.</p>
-    <p><strong>Publicidad:</strong> Esta versión de la aplicación no muestra ningún anuncio y no lee su identificador publicitario (IDFA). Si se introduce publicidad en una versión futura, esta política de privacidad se actualizará y se solicitarán por separado los permisos necesarios.</p>
-    <p><strong>Suscripciones:</strong> Los pagos se procesan a través de RevenueCat y Apple App Store. La aplicación no recopila ni almacena datos de pago.</p>
-    <p><strong>Notificaciones:</strong> Si otorga permiso, solo se envían notificaciones motivacionales diarias.</p>
+    <p><strong>Cuenta:</strong> Puedes usar la aplicación sin cuenta. Si decides crear una, puedes registrarte con correo y contraseña, con «Iniciar sesión con Apple» o con «Iniciar sesión con Google». En ese caso, tu correo electrónico y un ID de usuario (UUID) se almacenan en Supabase; tu contraseña se guarda cifrada (hash) y nunca es visible para nosotros. Esta información se usa solo para identificar tu cuenta y sincronizar tus datos entre dispositivos.</p>
+    <p><strong>Datos de la aplicación:</strong> Tus citas favoritas, tu progreso en el Árbol de Filosofía y en los Desafíos, y tus ajustes se guardan en tu dispositivo y, si tienes cuenta, se sincronizan con Supabase. Las citas vistas, la programación de notificaciones y el contenido del widget permanecen solo en tu dispositivo.</p>
+    <p><strong>Desahogo («Dert Dökme»):</strong> El texto que escribes en la pantalla de Desahogo nunca se guarda ni se envía a ningún servidor; la respuesta se elige en tu dispositivo y el texto se borra de la pantalla.</p>
+    <p><strong>Suscripciones:</strong> Los pagos se realizan a través del Apple App Store y el estado de la suscripción lo gestiona RevenueCat. La aplicación nunca recopila datos de tarjeta ni de pago. RevenueCat recibe un identificador aleatorio o, si has iniciado sesión, el ID de usuario (UUID) de tu cuenta, para que tu suscripción vuelva en un dispositivo nuevo o tras reinstalar.</p>
+    <p><strong>Interacción con el producto:</strong> Cuando se abre la pantalla de suscripción, se registra en RevenueCat desde qué parte de la aplicación se abrió (p. ej. «Ajustes» o «límite diario»), vinculado a tu identificador de suscripción. Se usa solo para mejorar la aplicación; nunca para publicidad ni seguimiento, y no se comparte con otras empresas.</p>
+    <p><strong>Comentarios:</strong> La pantalla «Enviar comentarios» prepara un mensaje en tu propia app de correo; enviarlo o no depende de ti. Si lo envías, recibimos tu dirección de correo, tu mensaje y los datos técnicos añadidos (versión de la app, versión de iOS, idioma de la app). Los usamos solo para responderte y mejorar la aplicación.</p>
+    <p><strong>Notificaciones:</strong> Si das permiso, las notificaciones diarias se programan en tu dispositivo; no se comparte ningún dato con terceros para ello.</p>
+    <p><strong>Publicidad y seguimiento:</strong> La aplicación no muestra anuncios ni contiene SDK publicitarios. Nunca se lee tu identificador publicitario (IDFA), no te rastreamos en apps o sitios de otras empresas y nunca vendemos tus datos.</p>
 
     <h2>3. Servicios de terceros</h2>
     <table>
       <tr><th>Servicio</th><th>Propósito</th><th>Política</th></tr>
-      <tr><td>Supabase</td><td>Almacenamiento de datos</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
-      <tr><td>RevenueCat</td><td>Gestión de suscripciones</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
-      <tr><td>Apple App Store</td><td>Infraestructura de pago</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Supabase</td><td>Cuenta y sincronización de datos</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Gestión de suscripciones, visualizaciones de la pantalla de suscripción</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Apple</td><td>Pagos del App Store, Iniciar sesión con Apple</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Google</td><td>Iniciar sesión con Google; buzón que recibe los correos de comentarios (Gmail)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
     </table>
 
-    <h2>4. Sus derechos (RGPD)</h2>
-    <p>Tiene derecho a acceder, rectificar, suprimir u oponerse al tratamiento de sus datos personales. Para ejercer estos derechos, contacte a <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a>.</p>
+    <h2>4. Tus derechos (RGPD)</h2>
+    <p>Según el RGPD tienes derecho a acceder a tus datos, rectificarlos o suprimirlos, limitar su tratamiento y oponerte a él. Puedes eliminar tu cuenta y todos tus datos de Supabase tú mismo en la app, en <strong>Ajustes → Eliminar cuenta</strong>. Para cualquier otra solicitud: <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>5. Privacidad de menores</h2>
-    <p>La aplicación no está dirigida a menores de 13 años y no recopilamos datos de menores de forma consciente.</p>
+    <p>La aplicación no está dirigida a menores de 13 años y no recopilamos conscientemente datos personales de ellos.</p>
 
-    <h2>6. Contacto</h2>
+    <h2>6. Conservación y seguridad</h2>
+    <p>Los datos se guardan en los servidores seguros de Supabase. Al eliminar tu cuenta, todos tus datos en Supabase se borran de forma permanente. Los correos de comentarios se conservan hasta resolver el asunto y se eliminan si lo solicitas. Apple y RevenueCat conservan los registros de compra según exige la ley.</p>
+
+    <h2>7. Cambios en esta política</h2>
+    <p>Esta política puede actualizarse. La versión vigente está siempre en esta página; la fecha de arriba cambia con cada actualización.</p>
+
+    <h2>8. Contacto</h2>
     <p><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
   </div>
 
-  <!-- FRANÇAIS -->
   <div class="section" id="lang-fr">
-    <p class="updated">Dernière mise à jour : 28 juillet 2026</p>
-    <p>Cette politique de confidentialité explique comment les données personnelles sont collectées, utilisées et protégées lors de l'utilisation de l'application Zihinsel Güç (Force Mentale).</p>
+    <p class="updated">Dernière mise à jour : 24 septembre 2026</p>
+    <p>Cette politique de confidentialité explique comment les données personnelles sont collectées, utilisées et protégées lorsque vous utilisez l’application Zihinsel Güç (Force Mentale). En bref : pas de publicité, pas de pistage, et nous ne vendons jamais vos données.</p>
 
     <h2>1. Responsable du traitement</h2>
     <p>Baha İncesu — <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>2. Données collectées</h2>
-    <p><strong>Compte :</strong> Vous pouvez utiliser l’application sans compte. Si vous souhaitez en créer un, vous pouvez vous inscrire avec une adresse e-mail et un mot de passe, ou utiliser « Se connecter avec Apple » ou « Se connecter avec Google ». Lors de la création d’un compte, votre adresse e-mail et un identifiant utilisateur (UUID) sont stockés sur Supabase ; votre mot de passe est stocké par Supabase sous forme hachée et ne nous est pas accessible. Ces informations servent uniquement à identifier votre compte et à synchroniser vos favoris et votre progression entre vos appareils.</p>
-    <p><strong>Utilisation :</strong> Les citations favorites, la progression de l'Arbre de Philosophie et les paramètres sont stockés localement et sur les serveurs Supabase uniquement pour assurer le fonctionnement de l'application.</p>
-    <p><strong>Publicité :</strong> Cette version de l’application n’affiche aucune publicité et ne lit pas votre identifiant publicitaire (IDFA). Si de la publicité est introduite dans une version future, la présente politique de confidentialité sera mise à jour et les autorisations nécessaires seront demandées séparément.</p>
-    <p><strong>Abonnements :</strong> Les paiements sont traités via RevenueCat et l'App Store d'Apple. Aucune donnée de paiement n'est collectée par l'application.</p>
-    <p><strong>Notifications :</strong> Si vous accordez l'autorisation, seules des notifications motivationnelles quotidiennes sont envoyées.</p>
+    <p><strong>Compte:</strong> Vous pouvez utiliser l’application sans compte. Si vous en créez un, vous pouvez vous inscrire avec un e-mail et un mot de passe, « Se connecter avec Apple » ou « Se connecter avec Google ». Votre adresse e-mail et un identifiant utilisateur (UUID) sont alors stockés sur Supabase ; votre mot de passe est stocké sous forme hachée et ne nous est jamais visible. Ces informations servent uniquement à identifier votre compte et à synchroniser vos données entre vos appareils.</p>
+    <p><strong>Données de l’application:</strong> Vos citations favorites, votre progression dans l’Arbre de Philosophie et les Défis, et vos réglages sont stockés sur votre appareil et, si vous avez un compte, synchronisés avec Supabase. Les citations vues, le planning des notifications et le contenu du widget restent uniquement sur votre appareil.</p>
+    <p><strong>Vider son sac (« Dert Dökme »):</strong> Le texte que vous écrivez sur cet écran n’est jamais enregistré ni envoyé à un serveur ; la réponse est choisie sur votre appareil et le texte est effacé de l’écran.</p>
+    <p><strong>Abonnements:</strong> Les paiements passent par l’App Store d’Apple et l’état de l’abonnement est géré par RevenueCat. L’application ne collecte jamais de données de carte ou de paiement. RevenueCat reçoit un identifiant aléatoire ou, si vous êtes connecté, l’identifiant utilisateur (UUID) de votre compte, afin que votre abonnement revienne sur un nouvel appareil ou après réinstallation.</p>
+    <p><strong>Interaction avec le produit:</strong> Lorsque l’écran d’abonnement s’ouvre, la partie de l’application d’où il a été ouvert (p. ex. « Réglages » ou « limite quotidienne ») est enregistrée dans RevenueCat, liée à votre identifiant d’abonnement. Elle sert uniquement à améliorer l’application — jamais à la publicité ou au pistage, et n’est jamais partagée avec d’autres entreprises.</p>
+    <p><strong>Avis:</strong> L’écran « Envoyer un avis » prépare un message dans votre propre app de messagerie ; libre à vous de l’envoyer. Si vous l’envoyez, nous recevons votre adresse e-mail, votre message et les informations techniques ajoutées (version de l’app, version d’iOS, langue de l’app). Nous les utilisons uniquement pour vous répondre et améliorer l’application.</p>
+    <p><strong>Notifications:</strong> Si vous l’autorisez, les notifications quotidiennes sont programmées sur votre appareil ; aucune donnée n’est partagée avec des tiers à cet effet.</p>
+    <p><strong>Publicité et pistage:</strong> L’application n’affiche aucune publicité et ne contient aucun SDK publicitaire. Votre identifiant publicitaire (IDFA) n’est jamais lu, nous ne vous pistons pas sur les apps ou sites d’autres entreprises et nous ne vendons jamais vos données.</p>
 
     <h2>3. Services tiers</h2>
     <table>
       <tr><th>Service</th><th>Finalité</th><th>Politique</th></tr>
-      <tr><td>Supabase</td><td>Stockage des données</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
-      <tr><td>RevenueCat</td><td>Gestion des abonnements</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
-      <tr><td>Apple App Store</td><td>Infrastructure de paiement</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Supabase</td><td>Compte et synchronisation des données</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Gestion des abonnements, affichages de l’écran d’abonnement</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Apple</td><td>Paiements App Store, Se connecter avec Apple</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Google</td><td>Se connecter avec Google ; boîte mail qui reçoit les avis (Gmail)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
     </table>
 
     <h2>4. Vos droits (RGPD)</h2>
-    <p>Vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition au traitement de vos données personnelles. Pour exercer ces droits, contactez <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a>.</p>
+    <p>Conformément au RGPD, vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation et d’opposition. Vous pouvez supprimer vous-même votre compte et toutes vos données sur Supabase dans l’application, via <strong>Réglages → Supprimer le compte</strong>. Pour toute autre demande : <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>5. Protection des mineurs</h2>
-    <p>L'application n'est pas destinée aux enfants de moins de 13 ans et nous ne collectons pas sciemment de données personnelles les concernant.</p>
+    <p>L’application ne s’adresse pas aux enfants de moins de 13 ans et nous ne collectons pas sciemment leurs données personnelles.</p>
 
-    <h2>6. Contact</h2>
+    <h2>6. Conservation et sécurité</h2>
+    <p>Les données sont stockées sur les serveurs sécurisés de Supabase. À la suppression du compte, toutes vos données sur Supabase sont définitivement effacées. Les e-mails d’avis sont conservés jusqu’au traitement de la demande et supprimés sur demande. Les données d’achat sont conservées par Apple et RevenueCat conformément à la loi.</p>
+
+    <h2>7. Modifications de cette politique</h2>
+    <p>Cette politique peut être mise à jour. La version en vigueur figure toujours sur cette page ; la date ci-dessus change à chaque mise à jour.</p>
+
+    <h2>8. Contact</h2>
     <p><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
   </div>
 
-  <!-- DEUTSCH -->
   <div class="section" id="lang-de">
-    <p class="updated">Letzte Aktualisierung: 28. Juli 2026</p>
-    <p>Diese Datenschutzrichtlinie erklärt, wie personenbezogene Daten bei der Nutzung der App Zihinsel Güç (Mentale Stärke) erhoben, verwendet und geschützt werden.</p>
+    <p class="updated">Letzte Aktualisierung: 24. September 2026</p>
+    <p>Diese Datenschutzerklärung erklärt, wie personenbezogene Daten bei der Nutzung der App Zihinsel Güç (Mentale Stärke) erhoben, verwendet und geschützt werden. Kurz gesagt: keine Werbung, kein Tracking, und wir verkaufen Ihre Daten nie.</p>
 
     <h2>1. Verantwortlicher</h2>
     <p>Baha İncesu — <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>2. Erhobene Daten</h2>
-    <p><strong>Konto:</strong> Sie können die App ohne Konto nutzen. Wenn Sie ein Konto erstellen möchten, können Sie sich mit einer E-Mail-Adresse und einem Passwort registrieren oder „Mit Apple anmelden“ bzw. „Mit Google anmelden“ verwenden. Bei der Kontoerstellung werden Ihre E-Mail-Adresse und eine Benutzer-ID (UUID) bei Supabase gespeichert; Ihr Passwort wird von Supabase gehasht gespeichert und ist für uns nicht einsehbar. Diese Daten dienen ausschließlich der Identifizierung Ihres Kontos und der Synchronisierung Ihrer Favoriten und Ihres Fortschritts zwischen Ihren Geräten.</p>
-    <p><strong>Nutzung:</strong> Lieblingszitate, der Fortschritt im Philosophiebaum und Einstellungen werden lokal und auf Supabase-Servern gespeichert, ausschließlich um die App-Funktionalität bereitzustellen.</p>
-    <p><strong>Werbung:</strong> Diese Version der App zeigt keine Werbung an und liest Ihren Werbe-Identifier (IDFA) nicht aus. Sollte in einer künftigen Version Werbung eingeführt werden, wird diese Datenschutzerklärung aktualisiert und erforderliche Einwilligungen werden gesondert eingeholt.</p>
-    <p><strong>Abonnements:</strong> Zahlungen werden über RevenueCat und den Apple App Store abgewickelt. Die App erhebt oder speichert keine Zahlungsdaten.</p>
-    <p><strong>Benachrichtigungen:</strong> Bei Erlaubnis werden ausschließlich tägliche Motivationsbenachrichtigungen gesendet.</p>
+    <p><strong>Konto:</strong> Sie können die App ohne Konto nutzen. Wenn Sie eines erstellen, können Sie sich mit E-Mail und Passwort, „Mit Apple anmelden“ oder „Mit Google anmelden“ registrieren. Dann werden Ihre E-Mail-Adresse und eine Benutzer-ID (UUID) bei Supabase gespeichert; Ihr Passwort wird gehasht gespeichert und ist für uns nie einsehbar. Diese Daten dienen ausschließlich der Identifizierung Ihres Kontos und der Synchronisierung zwischen Ihren Geräten.</p>
+    <p><strong>App-Daten:</strong> Ihre Lieblingszitate, Ihr Fortschritt im Philosophiebaum und in den Challenges sowie Ihre Einstellungen werden auf Ihrem Gerät gespeichert und, falls Sie ein Konto haben, mit Supabase synchronisiert. Gesehene Zitate, der Benachrichtigungsplan und die Widget-Inhalte bleiben ausschließlich auf Ihrem Gerät.</p>
+    <p><strong>Abladen („Dert Dökme“):</strong> Text, den Sie auf diesem Bildschirm schreiben, wird nie gespeichert und nie an einen Server gesendet; die Antwort wird auf Ihrem Gerät ausgewählt und der Text vom Bildschirm gelöscht.</p>
+    <p><strong>Abonnements:</strong> Zahlungen erfolgen über den Apple App Store, der Abostatus wird von RevenueCat verwaltet. Die App erhebt nie Karten- oder Zahlungsdaten. RevenueCat erhält eine zufällige Kennung oder, wenn Sie angemeldet sind, die Benutzer-ID (UUID) Ihres Kontos, damit Ihr Abo auf einem neuen Gerät oder nach einer Neuinstallation wiederhergestellt wird.</p>
+    <p><strong>Produktinteraktion:</strong> Wenn der Abo-Bildschirm geöffnet wird, wird in RevenueCat erfasst, aus welchem Bereich der App er geöffnet wurde (z. B. „Einstellungen“ oder „Tageslimit“), verknüpft mit Ihrer Abo-Kennung. Dies dient ausschließlich der Verbesserung der App – nie für Werbung oder Tracking, und wird nicht an andere Unternehmen weitergegeben.</p>
+    <p><strong>Feedback:</strong> Der Bildschirm „Feedback senden“ bereitet eine Nachricht in Ihrer eigenen Mail-App vor; ob Sie sie senden, entscheiden Sie. Wenn Sie sie senden, erhalten wir Ihre E-Mail-Adresse, Ihre Nachricht und die angehängten technischen Angaben (App-Version, iOS-Version, App-Sprache). Wir verwenden sie nur, um Ihnen zu antworten und die App zu verbessern.</p>
+    <p><strong>Benachrichtigungen:</strong> Wenn Sie zustimmen, werden tägliche Benachrichtigungen auf Ihrem Gerät geplant; dafür werden keine Daten an Dritte weitergegeben.</p>
+    <p><strong>Werbung und Tracking:</strong> Die App zeigt keine Werbung und enthält kein Werbe-SDK. Ihre Werbe-ID (IDFA) wird nie ausgelesen, wir verfolgen Sie nicht über Apps oder Websites anderer Unternehmen und verkaufen Ihre Daten nie.</p>
 
     <h2>3. Drittanbieter</h2>
     <table>
       <tr><th>Dienst</th><th>Zweck</th><th>Datenschutz</th></tr>
-      <tr><td>Supabase</td><td>Datenspeicherung</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
-      <tr><td>RevenueCat</td><td>Abonnementverwaltung</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
-      <tr><td>Apple App Store</td><td>Zahlungsinfrastruktur</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Supabase</td><td>Konto und Datensynchronisierung</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Aboverwaltung, Aufrufe des Abo-Bildschirms</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Apple</td><td>App-Store-Zahlungen, Mit Apple anmelden</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Google</td><td>Mit Google anmelden; Postfach, das Feedback-E-Mails empfängt (Gmail)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
     </table>
 
     <h2>4. Ihre Rechte (DSGVO)</h2>
-    <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten. Wenden Sie sich an <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a>.</p>
+    <p>Nach der DSGVO haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch. Ihr Konto und alle Ihre Daten bei Supabase können Sie in der App unter <strong>Einstellungen → Konto löschen</strong> selbst löschen. Für alle anderen Anliegen: <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>5. Datenschutz für Kinder</h2>
-    <p>Die App richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren.</p>
+    <p>Die App richtet sich nicht an Kinder unter 13 Jahren; wir erheben wissentlich keine personenbezogenen Daten von ihnen.</p>
 
-    <h2>6. Kontakt</h2>
+    <h2>6. Speicherdauer und Sicherheit</h2>
+    <p>Die Daten werden auf den sicheren Servern von Supabase gespeichert. Beim Löschen des Kontos werden alle Ihre Daten bei Supabase dauerhaft gelöscht. Feedback-E-Mails werden bis zur Klärung aufbewahrt und auf Wunsch gelöscht. Kaufdaten werden von Apple und RevenueCat gemäß gesetzlicher Pflichten aufbewahrt.</p>
+
+    <h2>7. Änderungen dieser Erklärung</h2>
+    <p>Diese Erklärung kann aktualisiert werden. Die aktuelle Fassung steht immer auf dieser Seite; das Datum oben ändert sich bei jeder Aktualisierung.</p>
+
+    <h2>8. Kontakt</h2>
     <p><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
   </div>
 
-  <!-- ARABIC -->
-  <div class="section" id="lang-ar" dir="rtl" style="text-align:right;">
-    <p class="updated">آخر تحديث: 28 يوليو 2026</p>
-    <p>تشرح سياسة الخصوصية هذه كيفية جمع البيانات الشخصية واستخدامها وحمايتها عند استخدام تطبيق Zihinsel Güç (القوة العقلية).</p>
+  <div class="section" id="lang-pt">
+    <p class="updated">Última atualização: 24 de setembro de 2026</p>
+    <p>Esta política de privacidade explica como os dados pessoais são coletados, usados e protegidos quando você usa o app Zihinsel Güç (Força Mental). Resumindo: sem anúncios, sem rastreamento, e nunca vendemos seus dados.</p>
 
-    <h2>١. المتحكم في البيانات</h2>
+    <h2>1. Controlador dos dados</h2>
+    <p>Baha İncesu — <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
+
+    <h2>2. Dados que coletamos</h2>
+    <p><strong>Conta:</strong> Você pode usar o app sem conta. Se quiser criar uma, pode se cadastrar com e-mail e senha, «Iniciar sessão com a Apple» ou «Fazer login com o Google». Nesse caso, seu e-mail e um ID de usuário (UUID) ficam armazenados no Supabase; sua senha é guardada de forma criptografada (hash) e nunca fica visível para nós. Essas informações servem apenas para identificar sua conta e sincronizar seus dados entre dispositivos.</p>
+    <p><strong>Dados do app:</strong> Suas citações favoritas, seu progresso na Árvore da Filosofia e nos Desafios e suas configurações ficam no seu dispositivo e, se você tiver conta, são sincronizados com o Supabase. As citações vistas, a programação de notificações e o conteúdo do widget ficam apenas no seu dispositivo.</p>
+    <p><strong>Desabafo («Dert Dökme»):</strong> O texto que você escreve na tela de Desabafo nunca é salvo nem enviado a nenhum servidor; a resposta é escolhida no seu dispositivo e o texto é apagado da tela.</p>
+    <p><strong>Assinaturas:</strong> Os pagamentos são feitos pela Apple App Store e o status da assinatura é gerenciado pelo RevenueCat. O app nunca coleta dados de cartão ou pagamento. O RevenueCat recebe um identificador aleatório ou, se você estiver conectado, o ID de usuário (UUID) da sua conta, para que sua assinatura volte em um novo dispositivo ou após reinstalar.</p>
+    <p><strong>Interação com o produto:</strong> Quando a tela de assinatura é aberta, fica registrado no RevenueCat de qual parte do app ela foi aberta (ex.: «Configurações» ou «limite diário»), vinculado ao seu identificador de assinatura. Isso serve apenas para melhorar o app — nunca para anúncios ou rastreamento, e não é compartilhado com outras empresas.</p>
+    <p><strong>Feedback:</strong> A tela «Enviar feedback» prepara uma mensagem no seu próprio app de e-mail; enviar ou não é decisão sua. Se enviar, recebemos seu e-mail, sua mensagem e os dados técnicos incluídos (versão do app, versão do iOS, idioma do app). Usamos esses dados apenas para responder e melhorar o app.</p>
+    <p><strong>Notificações:</strong> Se você permitir, as notificações diárias são programadas no seu dispositivo; nenhum dado é compartilhado com terceiros para isso.</p>
+    <p><strong>Anúncios e rastreamento:</strong> O app não exibe anúncios nem contém SDK de publicidade. Seu identificador de publicidade (IDFA) nunca é lido, não rastreamos você em apps ou sites de outras empresas e nunca vendemos seus dados.</p>
+
+    <h2>3. Serviços de terceiros</h2>
+    <table>
+      <tr><th>Serviço</th><th>Finalidade</th><th>Política</th></tr>
+      <tr><td>Supabase</td><td>Conta e sincronização de dados</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>Gestão de assinaturas, exibições da tela de assinatura</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Apple</td><td>Pagamentos da App Store, Iniciar sessão com a Apple</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Google</td><td>Login com o Google; caixa de e-mail que recebe os feedbacks (Gmail)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
+    </table>
+
+    <h2>4. Seus direitos (LGPD / RGPD)</h2>
+    <p>Pela LGPD e pelo RGPD, você tem direito de acessar seus dados, corrigi-los ou excluí-los, limitar o tratamento e se opor a ele. Você mesmo pode excluir sua conta e todos os seus dados no Supabase pelo app, em <strong>Ajustes → Excluir conta</strong>. Para qualquer outra solicitação: <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
+
+    <h2>5. Privacidade de menores</h2>
+    <p>O app não é destinado a menores de 13 anos e não coletamos intencionalmente dados pessoais deles.</p>
+
+    <h2>6. Retenção e segurança</h2>
+    <p>Os dados ficam nos servidores seguros do Supabase. Ao excluir a conta, todos os seus dados no Supabase são apagados permanentemente. Os e-mails de feedback são mantidos até o assunto ser resolvido e excluídos a pedido. Os registros de compra são mantidos pela Apple e pelo RevenueCat conforme exigido por lei.</p>
+
+    <h2>7. Alterações nesta política</h2>
+    <p>Esta política pode ser atualizada. A versão vigente está sempre nesta página; a data acima muda a cada atualização.</p>
+
+    <h2>8. Contato</h2>
+    <p><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
+  </div>
+
+  <div class="section" id="lang-ar" dir="rtl" style="text-align:right;">
+    <p class="updated">آخر تحديث: 24 سبتمبر 2026</p>
+    <p>توضّح سياسة الخصوصية هذه كيفية جمع البيانات الشخصية واستخدامها وحمايتها عند استخدام تطبيق Zihinsel Güç (القوة العقلية). باختصار: لا إعلانات، لا تتبّع، ولا نبيع بياناتك أبدًا.</p>
+
+    <h2>١. المتحكّم في البيانات</h2>
     <p>Baha İncesu — <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>٢. البيانات التي نجمعها</h2>
-    <p><strong>الحساب:</strong> يمكنك استخدام التطبيق دون إنشاء حساب. وإذا اخترت إنشاء حساب، يمكنك التسجيل ببريد إلكتروني وكلمة مرور، أو استخدام «تسجيل الدخول باستخدام Apple» أو «تسجيل الدخول باستخدام Google». عند إنشاء حساب، يُخزَّن بريدك الإلكتروني ومعرّف المستخدم (UUID) لدى Supabase؛ أما كلمة المرور فتُخزَّن مشفَّرة لدى Supabase ولا يمكننا الاطلاع عليها. تُستخدم هذه المعلومات فقط للتعرّف على حسابك ومزامنة مفضلاتك وتقدّمك بين أجهزتك.</p>
-    <p><strong>الاستخدام:</strong> يتم تخزين الاقتباسات المفضلة وتقدم شجرة الفلسفة والإعدادات محليًا وعلى خوادم Supabase فقط لتوفير وظائف التطبيق.</p>
-    <p><strong>الإعلانات:</strong> لا يعرض هذا الإصدار من التطبيق أي إعلانات ولا يقرأ معرّف الإعلانات الخاص بك (IDFA). وفي حال إضافة الإعلانات في إصدار مستقبلي، سيتم تحديث سياسة الخصوصية هذه وسيتم طلب الأذونات اللازمة بشكل منفصل.</p>
-    <p><strong>الاشتراكات:</strong> تتم معالجة المدفوعات عبر RevenueCat وApp Store. لا يجمع التطبيق أو يخزن أي بيانات دفع.</p>
-    <p><strong>الإشعارات:</strong> في حال منح الإذن، تُرسل إشعارات تحفيزية يومية فقط.</p>
+    <p><strong>الحساب:</strong> يمكنك استخدام التطبيق دون حساب. وإذا اخترت إنشاء حساب، يمكنك التسجيل ببريد إلكتروني وكلمة مرور، أو «تسجيل الدخول باستخدام Apple» أو «تسجيل الدخول باستخدام Google». عندها يُخزَّن بريدك الإلكتروني ومعرّف مستخدم (UUID) لدى Supabase؛ وتُخزَّن كلمة المرور مشفّرة ولا يمكننا الاطلاع عليها أبدًا. تُستخدم هذه المعلومات فقط للتعرّف على حسابك ومزامنة بياناتك بين أجهزتك.</p>
+    <p><strong>بيانات التطبيق:</strong> تُحفظ اقتباساتك المفضّلة وتقدّمك في شجرة الفلسفة والتحديات وإعداداتك على جهازك، وتُزامَن مع Supabase إن كان لديك حساب. أمّا الاقتباسات التي شاهدتها وجدول الإشعارات ومحتوى الأداة (Widget) فتبقى على جهازك فقط.</p>
+    <p><strong>فضفضة («Dert Dökme»):</strong> النص الذي تكتبه في شاشة الفضفضة لا يُحفظ أبدًا ولا يُرسَل إلى أي خادم؛ يُختار الرد على جهازك ويُمحى النص من الشاشة.</p>
+    <p><strong>الاشتراكات:</strong> تتم المدفوعات عبر Apple App Store، وتُدار حالة الاشتراك عبر RevenueCat. لا يجمع التطبيق أبدًا بيانات البطاقة أو الدفع. يتلقّى RevenueCat معرّفًا عشوائيًا، أو معرّف المستخدم (UUID) لحسابك إن كنت مسجّل الدخول، كي يعود اشتراكك على جهاز جديد أو بعد إعادة التثبيت.</p>
+    <p><strong>التفاعل مع المنتج:</strong> عند فتح شاشة الاشتراك، يُسجَّل في RevenueCat الجزء الذي فُتحت منه في التطبيق (مثل «الإعدادات» أو «الحد اليومي»)، مرتبطًا بمعرّف اشتراكك. يُستخدم ذلك لتحسين التطبيق فقط — لا للإعلانات ولا للتتبّع، ولا يُشارَك مع شركات أخرى.</p>
+    <p><strong>الملاحظات:</strong> تُعِدّ شاشة «أرسل ملاحظاتك» رسالة في تطبيق البريد الخاص بك؛ وقرار الإرسال لك. إذا أرسلتها، نتلقّى عنوان بريدك الإلكتروني ورسالتك والمعلومات التقنية المضافة إليها (إصدار التطبيق، إصدار iOS، لغة التطبيق). نستخدمها فقط للرد عليك وتحسين التطبيق.</p>
+    <p><strong>الإشعارات:</strong> إذا منحت الإذن، تُجدوَل الإشعارات اليومية على جهازك؛ ولا تُشارَك أي بيانات مع أطراف ثالثة لهذا الغرض.</p>
+    <p><strong>الإعلانات والتتبّع:</strong> لا يعرض التطبيق أي إعلانات ولا يحتوي على أي حزمة إعلانية (SDK). لا يُقرأ معرّف الإعلانات (IDFA) أبدًا، ولا نتتبّعك عبر تطبيقات أو مواقع شركات أخرى، ولا نبيع بياناتك أبدًا.</p>
 
     <h2>٣. خدمات الطرف الثالث</h2>
     <table style="text-align:right;">
       <tr><th>الخدمة</th><th>الغرض</th><th>السياسة</th></tr>
-      <tr><td>Supabase</td><td>تخزين البيانات</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
-      <tr><td>RevenueCat</td><td>إدارة الاشتراكات</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
-      <tr><td>Apple App Store</td><td>البنية التحتية للدفع</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Supabase</td><td>الحساب ومزامنة البيانات</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+      <tr><td>RevenueCat</td><td>إدارة الاشتراكات، مرات عرض شاشة الاشتراك</td><td><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></td></tr>
+      <tr><td>Apple</td><td>مدفوعات App Store، تسجيل الدخول باستخدام Apple</td><td><a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a></td></tr>
+      <tr><td>Google</td><td>تسجيل الدخول باستخدام Google؛ صندوق البريد الذي يستقبل رسائل الملاحظات (Gmail)</td><td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td></tr>
     </table>
 
     <h2>٤. حقوقك (GDPR)</h2>
-    <p>يحق لك الوصول إلى بياناتك الشخصية أو تصحيحها أو حذفها أو الاعتراض على معالجتها. للتواصل: <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
+    <p>يحق لك الوصول إلى بياناتك وتصحيحها أو حذفها، وتقييد معالجتها والاعتراض عليها. يمكنك حذف حسابك وجميع بياناتك لدى Supabase بنفسك من داخل التطبيق عبر <strong>الإعدادات ← حذف الحساب</strong>. لأي طلب آخر: <a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
 
     <h2>٥. خصوصية الأطفال</h2>
-    <p>التطبيق غير مخصص للأطفال دون سن ١٣ عامًا ولا نجمع بياناتهم الشخصية عن قصد.</p>
+    <p>التطبيق غير موجّه للأطفال دون سن ١٣ عامًا، ولا نجمع بياناتهم الشخصية عن قصد.</p>
 
-    <h2>٦. التواصل</h2>
+    <h2>٦. مدة الاحتفاظ والأمان</h2>
+    <p>تُخزَّن البيانات على خوادم Supabase الآمنة. عند حذف الحساب تُحذف جميع بياناتك لدى Supabase نهائيًا. تُحفظ رسائل الملاحظات حتى تُعالَج وتُحذف عند الطلب. وتحتفظ Apple وRevenueCat بسجلات الشراء وفقًا للقانون.</p>
+
+    <h2>٧. التغييرات على هذه السياسة</h2>
+    <p>قد تُحدَّث هذه السياسة. النسخة السارية موجودة دائمًا في هذه الصفحة، ويتغيّر التاريخ أعلاه مع كل تحديث.</p>
+
+    <h2>٨. التواصل</h2>
     <p><a href="mailto:bahaincesu@gmail.com">bahaincesu@gmail.com</a></p>
   </div>
-
 </div>
-
 <script>
-  function setLang(code) {
+  function setLang(code, btn) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === code));
     document.getElementById('lang-' + code).classList.add('active');
-    event.target.classList.add('active');
     document.documentElement.lang = code;
   }
+  // Açılışta tarayıcı dilini seç (uygulamanın dili genelde cihaz dilidir); desteklenmiyorsa İngilizce.
+  (function () {
+    var supported = ["tr", "en", "es", "fr", "de", "pt", "ar"];
+    var want = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    setLang(supported.indexOf(want) >= 0 ? want : 'en');
+  })();
 </script>
 </body>
 </html>
